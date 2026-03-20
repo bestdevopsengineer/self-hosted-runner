@@ -11,5 +11,7 @@ jobs:
     steps:
       - name: Print runner info
         run: |
-          echo "Runner is working"
-          uname -a
+          Write-Host "Runner is working"
+          Get-ComputerInfo | Select-Object WindowsVersion, OsName, OsArchitecture
+          #echo "Runner is working"
+          #uname -a
