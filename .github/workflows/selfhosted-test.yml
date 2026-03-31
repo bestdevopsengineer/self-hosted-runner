@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: dev1
+    runs-on: dev2
     steps:
       - name: Print runner info
         run: |
